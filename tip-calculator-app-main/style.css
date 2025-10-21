@@ -24,6 +24,74 @@ body {
 }
 
 .label {
-    font-size: 12px;
+    font-size: 15px;
     opacity: 60%;
+}
+
+.bill-input {
+    width: 100%;
+    height: 2em;
+    background-color : #f4fafbff;
+    border: none;
+
+    
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.currency {
+    font-size: 24px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 40%;
+
+}
+
+.input-wrapper input {
+  text-align: right;
+  padding: 10px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  color: #00494dff;
+  width: 96%;
+}
+
+.tip-label {
+  padding-top: 20px;
+}
+
+.amount-box {
+  background-color: #00494dff;
+  color : #c5e4e7ff;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.amount-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 10px; /* space between boxes */
+  max-width: 420px; /* optional: keeps layout neat */
+}
+
+.amount-box {
+  background-color: #00494dff;
+  color: #c5e4e7ff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
 }

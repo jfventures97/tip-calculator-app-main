@@ -17,7 +17,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Green 900: hsl(183, 100%, 15%)
+- Green 900: #00494dff
 - Grey 500: hsl(186, 14%, 43%)
 - Grey 400: hsl(184, 14%, 56%)
 - Grey 200: #c5e4e7ff
