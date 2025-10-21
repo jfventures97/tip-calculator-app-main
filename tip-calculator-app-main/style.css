@@ -1,8 +1,29 @@
 
 body {
     background-color: #c5e4e7ff;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;;
+}
+
+
+.logo {
+    display: block;
+    margin: 30px auto 30px auto;
 }
 
 .main-body {
  background-color: white;
+ padding: 2em;
+ border-radius: 1em;
+}
+
+.main-body p {
+    margin: 0;
+}
+
+.label {
+    font-size: 12px;
+    opacity: 60%;
 }
