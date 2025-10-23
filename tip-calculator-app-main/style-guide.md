@@ -13,7 +13,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Green 400: hsl(172, 67%, 45%)
+- Green 400: #26c0abff
 
 ### Neutral
 

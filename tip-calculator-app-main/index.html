@@ -37,19 +37,25 @@
             <div class="amount-box">15%</div>
             <div class="amount-box">25%</div>
             <div class="amount-box">50%</div>
-            <div class="amount-box" id="custom-box"> Custom </div>
+            <input type="number" placeholder="Custom" class="custom-box" id="custom-box">
           </div>
 
-          <p>Number of People</p>
-          <input></input>
+          <p class="label people-label">Number of People</p>
+          <input class="bill-input people-input">
 
     </div>
-    <div>
-          <div>Tip Amount
-          / person </div>
 
-          <div>Total
-          / person</div>
+
+    <div class="bottom-container">
+          <div class="flex">
+          <p class="white-text">Tip Amount<span class="sub-text">/ person</span></p>
+          <p >$20</p>
+          </div>
+
+          <div class="flex">
+          <p class="white-text"> Total <span class="sub-text">/ person</span></p> 
+          <p> $30</p>
+          </div>
 
           <button>Reset</button>
     </div>

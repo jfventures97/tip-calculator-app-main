@@ -56,7 +56,7 @@ body {
 
 .input-wrapper input {
   text-align: right;
-  padding: 10px;
+  padding-right: 10px;
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 24px;
@@ -71,27 +71,96 @@ body {
 .amount-box {
   background-color: #00494dff;
   color : #c5e4e7ff;
-  width: 200px;
+  margin-top: 5px;
   height: 50px;
   margin-bottom: 10px;
   text-align: center;
   border-radius: 10px;
+
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  
+
+  cursor: pointer;
+
 }
+
+
+
+
 
 .amount-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 10px; /* space between boxes */
-  max-width: 420px; /* optional: keeps layout neat */
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  font-family: "Space Mono", monospace;
+    font-weight: 700;
+  font-size: 24px;
+
+
 }
 
-.amount-box {
-  background-color: #00494dff;
-  color: #c5e4e7ff;
+
+.custom-box {
+
+  color : #00494dff;
+  margin-top: 5px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 10px;
+  text-align: center;
   border-radius: 10px;
-  cursor: pointer;
+
+  
+  border: none;
+  padding: 0;
+  background-color: #f4fafbff;
+  font-family: "Space Mono", monospace;
+    font-weight: 700;
+  font-size: 24px;
+
+   box-sizing: border-box; /* makes width + padding consistent */
+  padding: 0;             /* remove internal padding */
+  width: 100%;            /* matches grid cell size */
+
+}
+
+
+.people-label {
+  padding-top: 1.2rem;
+}
+
+.people-input {
+
+  text-align: right;
+  padding-right: 5px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  color: #00494dff;
+  width: 96%;
+}
+
+.bottom-container {
+  background-color: #00494dff;
+  margin-top: 2em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-text {
+ color: #ffffffff
+}
+
+.sub-text {
+  display: block;     /* moves to next line */
+  font-size: 0.8em;   /* smaller text */
+  color: #c5e4e7;     /* optional lighter color */
+}
+
+.bottom-container button {
+ background-color: #26c0abff;
 }
