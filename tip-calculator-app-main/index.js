@@ -1,20 +1,14 @@
 
-console.log("JS file loaded!");
-
-
 const billInput = document.getElementById('bill-input');
 const peopleNumber = document.getElementById('people-input')
-
-
 const tipPerPerson = document.getElementById('tip-per-person')
-
-
 const boxes = document.querySelectorAll(".amount-box");
 const customBox = document.getElementById("custom-box");
-
 const totalPerPerson = document.getElementById('total-per-person')
 
 let selectedTip = 0;
+
+// Part 1 :Handle Tip Selection
 
 const handleBoxClick = (box) => {
   boxes.forEach(b => b.classList.remove("selected")); // remove from all
@@ -23,6 +17,8 @@ const handleBoxClick = (box) => {
   customBox.value = "";
   selectedTip = parseFloat(box.textContent);
   console.log("Selected Tip:", selectedTip);
+
+  finalCalculation();
 };
 
 // attach listener
@@ -35,7 +31,11 @@ customBox.addEventListener('input', () => {
     selectedTip = parseFloat(customBox.value) || 0;
 
     console.log('Custom Tip :', selectedTip)
+
+    finalCalculation();
 })
+
+// Part 2 : Calculate Amount and Display in Final 
 
 function finalCalculation() {
     const bill = parseFloat(billInput.value) || 0;
@@ -56,3 +56,14 @@ function finalCalculation() {
 billInput.addEventListener("input", finalCalculation);
 peopleNumber.addEventListener("input", finalCalculation);
 
+
+const resetButton = document.querySelector("button");
+resetButton.addEventListener("click", () => {
+  billInput.value = "";
+  peopleNumber.value = "";
+  customBox.value = "";
+  boxes.forEach(b => b.classList.remove("selected"));
+  selectedTip = 0;
+  tipPerPerson.textContent = "$0.00";
+  totalPerPerson.textContent = "$0.00";
+});
