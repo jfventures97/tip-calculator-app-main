@@ -198,3 +198,14 @@ border: none;
   background-color: #26c0ab; /* green highlight */
   color: #00494d;
 }
+
+
+@media (min-width: 1024px) { 
+  .main-body {
+    display: flex;
+    flex-direction: row;
+
+
+  }
+
+}

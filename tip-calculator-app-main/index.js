@@ -39,11 +39,17 @@ customBox.addEventListener('input', () => {
 
 function finalCalculation() {
     const bill = parseFloat(billInput.value) || 0;
-    console.log(bill)
     const people = parseFloat(peopleNumber.value) || 0;
-    console.log(people)
     const tipPercent = parseFloat(selectedTip) || 0;
-    console.log(tipPercent)
+    
+
+     if (isNaN(bill) || bill <= 0 || 
+        isNaN(people) || people <= 0 || 
+        isNaN(tipPercent) || tipPercent < 0) {
+        tipPerPerson.textContent = "$0.00";
+        totalPerPerson.textContent = "$0.00";
+    return;
+  }
 
     const tipPerPersonValue = (bill * (tipPercent / 100)) / people;
 
