@@ -215,7 +215,7 @@ border: none;
   .bottom-container {
   
     width: 50%;
-    margin-left: 20px;
+    margin-left: 30px;
     padding-left : 30px;
   }
 
@@ -248,5 +248,28 @@ border: none;
 
 .top-container {
   margin-left: 2em;
+}
+
+.bottom-container button {
+  margin-top: 5em;
+}
+}
+
+
+@media (min-width: 1024px)  { 
+  .top-container{
+    width: 50%;
+  }
+
+  .amount-box {
+  width: 6em; }
+
+  .custom-box {
+    width: 8.6em;
+  }
+  
+  .main-body {
+    padding: 3em;
+  }
 }
 }
