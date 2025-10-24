@@ -188,3 +188,13 @@ border: none;
   padding-top: 20px;
 
 }
+
+.tip-calculation {
+  color: #26c0abff;
+  font-size : 1.7em
+}
+
+.amount-box.selected {
+  background-color: #26c0ab; /* green highlight */
+  color: #00494d;
+}
